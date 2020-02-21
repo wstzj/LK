@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFC0CB">
+
+    <ImageView
+        android:id="@+id/plate_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <RelativeLayout
+        android:id="@+id/plate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/plate_entering"
+        android:layout_toRightOf="@+id/plate_image">
+
+        <TextView
+            android:id="@+id/plate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新轻小说分享"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#469999"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/plate_entering"
+        android:layout_width="45dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#FFF19EC2"
+        android:maxEms="1"
+        android:text=""
+        android:textColor="#FFF19EC2"
+        android:stateListAnimator="@null"/>
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="10dp"
+        android:background="#FFF19EC2"
+        android:textColor="#000000"
+        android:ems="1"
+        android:text="进入"
+        android:gravity="center"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/last_respond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plate_image"
+        android:layout_marginLeft="25dp"
+        android:text="最新回复:" />
+    <TextView
+        android:id="@+id/last_respond_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxEms="10"
+        android:layout_below="@+id/plate_image"
+        android:layout_toRightOf="@+id/last_respond"
+        android:text="[web][自翻]叹息的亡灵想引退(59"
+        android:gravity=""
+         />
+
+<!--    <Button-->
+<!--        android:id="@+id/last_respond_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBottom="@+id/last_respond_text"-->
+<!--        android:layout_below="@+id/plate_image"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        android:background="#"-->
+<!--        android:maxLines="1"-->
+<!--        android:stateListAnimator="@null"-->
+<!--        android:text="[web][自翻]叹息的亡灵想引退(59 ..."-->
+<!--        android:textColor="#FFF19EC2"-->
+<!--        android:textSize="0sp" />-->
+
+</RelativeLayout>

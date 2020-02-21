@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/light_novel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="轻之国度"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginVertical="50dp"
+        android:layout_above="@+id/main_search"
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main_search"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/search_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入搜索内容"
+            />
+        <Button
+            android:id="@+id/search_all_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索" />
+    </LinearLayout>
+
+</RelativeLayout>

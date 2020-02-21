@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/entering"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F29CB1"
+        android:textColor="#F29CB1"
+        android:layout_alignTop="@id/tag"
+        android:layout_alignBottom="@id/last_update_time"
+        android:stateListAnimator="@null" />
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[web]"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tag"
+        android:layout_alignBaseline="@+id/tag"
+        android:lines="1"
+        />
+    <TextView
+        android:id="@+id/upDater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传者:"
+        android:layout_below="@+id/tag"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/upDater_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/upDater"
+        android:layout_toRightOf="@+id/upDater"
+        android:layout_marginLeft="20dp"
+        android:text="轻之国度录入组"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/last_updateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最后更新时间:"
+        android:layout_below="@+id/upDater_Name"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/last_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/last_updateTime"
+        android:layout_alignBaseline="@+id/last_updateTime"
+        android:layout_marginLeft="10dp"
+        android:text="2019.6.6"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
